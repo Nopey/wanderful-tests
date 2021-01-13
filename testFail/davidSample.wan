@@ -1,0 +1,24 @@
+% This failing sample is David's sample program, before he fixed the
+%    syntax. There are two missing semicolons, and two '>' characters.
+%
+% this is just a quick example to show what a Wanderful program might look like
+mapsize 100
+start
+   create Bob 10 5 south ; % bob starts in row 10, column 5, facing south
+   create Fred 60 80 west ; % fred starts in row 60, column 80, facing west
+
+   % keep moving bob roughly southsoutheast until bob is south of fred
+   repeat
+      move Bob 2 ;
+      turn Bob east ;
+      move Bob 1 ;
+      turn Bob south ;
+      print Bob ;
+   until ( row ( Bob ) > row ( Fred ) )
+
+   % if bob is east of fred then turn fred east
+   if ( col ( Bob ) > col ( Fred ) ) then
+      turn Fred east
+   end
+   print Fred ;
+finish

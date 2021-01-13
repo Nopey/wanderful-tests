@@ -1,0 +1,5 @@
+mapsize 10 ;
+start
+   % STATEMENTS requries at least one statement.
+   % And so, this is not valid.
+finish

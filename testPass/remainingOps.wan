@@ -1,0 +1,14 @@
+% This test covers all alternatives/cases for each grammar rule when
+%    combined with davidSample.wan.
+% The cases not covered by davidSample.wan are DIRECTION's north and
+%    COMPOP's <=, =, and ><.
+% It also uses significantly less space, as your parser should be able
+%    to handle this.
+
+mapsize 10;
+start
+   create Bo 1 1 north;
+   if(col(Bo)<=row(Bo))then print Bo; end
+   if(col(Bo) =row(Bo))then print Bo; end
+   if(col(Bo)><row(Bo))then print Bo; end
+finish

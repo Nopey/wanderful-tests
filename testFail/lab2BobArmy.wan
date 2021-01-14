@@ -1,0 +1,5 @@
+mapsize 30 ;
+start
+   create Bob 10 10 south ;
+   create Bob 10 10 south ;
+finish

@@ -1,0 +1,4 @@
+mapsize 10
+start
+   create Bob 100 5 south ;
+finish

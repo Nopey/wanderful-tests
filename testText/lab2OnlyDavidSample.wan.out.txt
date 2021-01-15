@@ -1,0 +1,8 @@
+Compilation begins:
+
+
+Compilation complete.
+Map Size 100
+Symbol table (2 entries)
+Bob declared line 9, column 26, coordinates (10,5), facing S
+Fred declared line 10, column 27, coordinates (60,80), facing W

@@ -6,7 +6,8 @@
 # Blacklist is used to disable tests that are for later labs.
 # Tests containing a blacklisted word in the filename will be ignored
 # So, to only run tests for lab 1, define:
-blacklist="lab2 lab3 lab4 lab5 lab6"
+# blacklist="lab2 lab3 lab4 lab5 lab6"
+blacklist="lab3 lab4 lab5 lab6"
 
 function is_not_blacklisted() {
    # filename to compare against blacklist
@@ -74,9 +75,9 @@ function run_test() {
    elif [[ "$i" == **"testFail"** ]]; then
       ((bug=!ret))
    elif [[ "$i" == **"testText"** ]]; then
-      o="$o.out.txt"
+      o="$i.out.txt"
 
-      diff "$i" "$o" > /dev/null 2>&1
+      diff "$log" "$o" > /dev/null 2>&1
       bug="$?"
    else
       echo "${e}FATAL ERROR:${r} Unknown test type."
@@ -115,6 +116,9 @@ function display_report() {
 
    echo
 }
+
+# Go to wanderful repo
+cd "$(dirname "$(realpath "$0")")"
 
 # Integrity checks
 if [ ! -f lab ]; then

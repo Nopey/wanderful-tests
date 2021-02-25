@@ -1,0 +1,25 @@
+mapsize 100 ;
+start
+
+    create Bob 32 32 north ;
+
+    % examples, assuming Bob has been created
+    int abc ;
+    abc := row ( Bob ) ;
+    abc := 27 ;
+    print abc ;
+    name whoever ;
+    whoever := Bob ;
+    str text ;
+
+    % WOOPS!
+    text := 27 ;
+
+    str moretext ;
+    moretext := text ;
+
+    facing mydir ;
+    mydir := south ;
+    mydir := face ( Bob ) ;
+
+finish

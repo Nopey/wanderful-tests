@@ -1,0 +1,5 @@
+mapsize 100 ;
+start
+    % Woops, no radius!
+    print radius ;
+finish

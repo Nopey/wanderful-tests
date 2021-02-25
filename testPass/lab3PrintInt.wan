@@ -1,0 +1,4 @@
+mapsize 120 ;
+start
+print 5 ;
+finish

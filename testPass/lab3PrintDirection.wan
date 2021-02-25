@@ -1,0 +1,4 @@
+mapsize 120 ;
+start
+print north ;
+finish

@@ -7,7 +7,7 @@
 # Tests containing a blacklisted word in the filename will be ignored
 # So, to only run tests for lab 1, define:
 # blacklist="lab2 lab3 lab4 lab5 lab6"
-blacklist="lab3 lab4 lab5 lab6"
+blacklist="lab2Only lab4 lab5 lab6"
 
 function is_not_blacklisted() {
    # filename to compare against blacklist
@@ -90,6 +90,7 @@ function run_test() {
       ((bugCount++))
       echo
       echo "${b}BUG IN:${r} $i"
+      # echo "\"$(realpath lab)\" < \"$(realpath $i)\""
       echo "${b}LAB OUTPUT:${r}"
       cat "$log"
       if [ "$o" ]; then

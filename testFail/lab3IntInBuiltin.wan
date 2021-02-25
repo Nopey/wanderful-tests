@@ -1,0 +1,25 @@
+mapsize 100 ;
+start
+
+    create Bob 32 32 north ;
+
+    int abc ;
+
+    % set abc to an int, as if it matters
+    abc := 27 ;
+    % Oops! abc isn't a bot!
+    abc := row ( abc ) ;
+
+    print abc ;
+    name whoever ;
+    whoever := Bob ;
+    str text ;
+    text := 'hello!' ;
+    str moretext ;
+    moretext := text ;
+
+    facing mydir ;
+    mydir := south ;
+    mydir := face ( Bob ) ;
+
+finish

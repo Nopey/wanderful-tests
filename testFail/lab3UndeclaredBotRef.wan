@@ -1,0 +1,5 @@
+mapsize 100 ;
+start
+    name somebody ;
+    somebody := Asterix ;
+finish

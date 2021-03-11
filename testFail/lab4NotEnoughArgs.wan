@@ -1,0 +1,24 @@
+   mapsize 25 ;
+
+   function welcome ( ) : none
+   begin
+      print 'welcome to my great program' ;
+   end
+
+   function sum ( int a , int b ) : int
+   begin
+      int result ;
+      result := a + b ;
+      return result ;
+   end
+
+   start
+      welcome ( ) ;
+      int x ;
+
+      % WOOPS! Sum takes 2 arguments, not 1!
+      x := sum ( 3 ) ;
+
+      print x ;
+   finish
+

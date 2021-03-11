@@ -7,7 +7,7 @@
 # Tests containing a blacklisted word in the filename will be ignored
 # So, to only run tests for lab 1, define:
 # blacklist="lab2 lab3 lab4 lab5 lab6"
-blacklist="lab2Only lab4 lab5 lab6"
+blacklist="lab2Only lab3Only lab5 lab6"
 
 function is_not_blacklisted() {
    # filename to compare against blacklist
@@ -83,6 +83,11 @@ function run_test() {
       echo "${e}FATAL ERROR:${r} Unknown test type."
       echo "Test: '$i'"
       exit 1
+   fi
+
+   # Process aborted? Bug.
+   if [[ 134 -eq "$ret"  ]]; then
+      bug=1
    fi
 
    ((testCount++))

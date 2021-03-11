@@ -1,0 +1,25 @@
+   mapsize 25 ;
+
+   function welcome ( ) : none
+   begin
+      print 'welcome to my great program' ;
+
+      % WOOPS! not valid here.
+      return 5 ;
+
+   end
+
+   function sum ( int a , int b ) : int
+   begin
+      int result ;
+      result := a + b ;
+      return result ;
+   end
+
+   start
+      welcome ( ) ;
+      int x ;
+      x := sum ( 3 , 15 ) ;
+      print x ;
+   finish
+

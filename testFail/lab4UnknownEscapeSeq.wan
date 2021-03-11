@@ -1,0 +1,6 @@
+   mapsize 25 ;
+   start
+      % Woops! \x isn't known!
+      print '\x' ;
+   finish
+

@@ -1,0 +1,22 @@
+   mapsize 25 ;
+
+   function welcome ( ) : none
+   begin
+      print 'welcome to my great program' ;
+   end
+
+   % WOOPS! sum returns a facing! That's a typo and a half..
+   function sum ( int a , int b ) : facing
+   begin
+      int result ;
+      result := a + b ;
+      return result ;
+   end
+
+   start
+      welcome ( ) ;
+      int x ;
+      x := sum ( 3 , 15 ) ;
+      print x ;
+   finish
+

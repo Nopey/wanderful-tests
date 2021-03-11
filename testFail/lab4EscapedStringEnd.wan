@@ -1,0 +1,7 @@
+   mapsize 25 ;
+
+   start
+      % Woops! Escaped the end of the string!
+      print '\' ;
+   finish
+

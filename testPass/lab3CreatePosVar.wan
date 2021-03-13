@@ -1,0 +1,6 @@
+mapsize 25 ;
+start
+    int x ;
+    int y ;
+    create Sbeve x y north ; 
+finish

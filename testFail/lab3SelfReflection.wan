@@ -1,0 +1,4 @@
+mapsize 25 ;
+start
+   create Aristotle row( Aristotle ) col( Aristotle ) face ( Aristotle ) ;
+finish

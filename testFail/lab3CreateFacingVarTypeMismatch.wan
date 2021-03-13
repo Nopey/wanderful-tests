@@ -1,0 +1,5 @@
+mapsize 25 ;
+start
+    int dire ;
+    create Sbeve 1 1 dire ; 
+finish

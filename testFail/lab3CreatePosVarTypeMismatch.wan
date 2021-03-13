@@ -1,0 +1,6 @@
+mapsize 25 ;
+start
+    facing x ;
+    facing y ;
+    CREATE Sbeve x y north ; 
+finish

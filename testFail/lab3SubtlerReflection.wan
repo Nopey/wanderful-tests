@@ -1,0 +1,7 @@
+mapsize 25 ;
+start
+   % This one catches slightly more bad programmers, as
+   %  the insertVar call could be anywhere before the
+   %  facing's value and be buggy, and this will find that.
+   create Aristotle 1 1 face ( Aristotle ) ;
+finish
